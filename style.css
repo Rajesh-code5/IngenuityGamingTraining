@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+    
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    display: inline-block;
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    border-radius: 100%;
+}
+
+.images img{
+    height: 75%;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .image{
+    left: 45%;
+}
+
+
+.about, .contact{
+    padding: 2rem;
+    margin: 1rem;
+    background: #eff4fd;
+
+}
+
+
+.about h1,.contact h1{
+    display: inline-block;
+    border-bottom: 1px solid rgb(74, 188, 223);
+    color: rgb(74, 188, 223);
+    margin: 1rem;
+}
+
+.about h2,.contact h2{
+    display: inline-block;
+    color: rgb(228, 68, 90);
+    margin: 1rem;
+}
+
+
+.about p,.contact p{
+    color: rgb(243, 155, 23);
+}
