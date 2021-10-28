@@ -1,11 +1,17 @@
 *{
     font-size: 20px;
     margin-bottom: 1rem;
-}
+    font-family:cursive;
+    border-radius:20px;
 
+}
+body{
+    background-color: #FFDAB9;
+}
 h1{
     /* margin: 1em; */
     font-size: 60px;
+    font-family:cursive
 }
 
 .input-field{
@@ -14,6 +20,8 @@ h1{
     margin: auto;
     background-color: blanchedalmond;
     box-sizing: border-box;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .inner-element{
@@ -25,8 +33,9 @@ h1{
 
 .main{
     text-align: center;
-    background-color: aqua;
+    background-color: #FDF5E6;
     height: 29rem;
+    margin: 0 10%;
     position: relative;
 }
 
@@ -41,6 +50,12 @@ h1{
 }
 
 .losediv{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+}
+
+.highLowDiv{
     position: fixed;
     top: 40%;
     left: 40%;
