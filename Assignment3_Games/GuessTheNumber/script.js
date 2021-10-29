@@ -24,52 +24,8 @@ const submit = document.querySelector("button[type = 'submit']");
 const numberTab = document.querySelector("#number-tab");
 
 submit.addEventListener("click",function(){
-     let value = parseInt(numberTab.value);
-    console.log(value);
-    console.log(num)
-    if(numberTab.value == "") return;
-
-    if(parseInt(value) == parseInt(num)){
-        let windiv = document.createElement("div");
-        windiv.classList.add("windiv");
-        windiv.innerHTML = `<h1>YOU WIN</h1>`;
-        main.append(windiv);
-        reset();
-    }
-
-    else if(parseInt(turns.innerText) <= 1){
-        turns.innerText = 0;
-        let losediv = document.createElement("div");
-        losediv.classList.add("losediv");
-        losediv.innerHTML = `<h1>OOPS! YOU LOST</h1>`;
-        main.append(losediv);
-        reset();
-    }
-
-    else{
-        // let highlowDiv = document.querySelector(".highLowDiv");
-        // if(highlowDiv) highlowDiv.remove();
-        highlowDiv = document.createElement("div");
-        highlowDiv.classList.add("highLowDiv");
-        if(parseInt(value) < 1 || parseInt(value) > 1000){
-            highlowDiv.innerHTML = `<h2>Please, Enter a number b/w 1 to 1000 both inclusive</h2>`;
-            turns.innerText = parseInt(turns.innerText) + 1;
-        }else if(parseInt(value) > parseInt(num)){
-            highlowDiv.innerHTML = `<h1>Too High</h1>`;
-        }else{
-            highlowDiv.innerHTML = `<h1>Too Low</h1>`; 
-        }
-        main.append(highlowDiv);
-        turns.innerText = parseInt(turns.innerText) - 1;
-    }
-
-    numberTab.value = "";
-});
-
-function reset(){
-    turns.innerText = 0;
-    num = Math.floor(Math.random() * 1000) + 1;
-}
+    submitFun();
+})
 
 const resetBtn = document.querySelector("button[type = 'Reset']");
 
@@ -79,6 +35,7 @@ resetBtn.addEventListener("click",function(e){
 
     let windiv = document.querySelector(".windiv");
     let losediv = document.querySelector(".losediv");
+    let highLowDiv = document.querySelector(".highLowDiv");
 
     if(windiv){
         windiv.remove()
@@ -86,6 +43,7 @@ resetBtn.addEventListener("click",function(e){
     if(losediv){
         losediv.remove()
     }
+    if(highLowDiv) highLowDiv.remove();
 });
 
 
@@ -96,6 +54,7 @@ numberTab.addEventListener("click",function(e){
     
     if(highLowDiv) highLowDiv.remove();
     if(windiv){
+        turns.innerText = 0;
         windiv.remove()
     } 
     if(losediv){
@@ -104,18 +63,32 @@ numberTab.addEventListener("click",function(e){
     if(turns.innerText == 0) turns.innerText = 15;
 })
 
-inputField.addEventListener("keypress",function(e){
+numberTab.addEventListener("keypress",function(e){
+
+    let windiv = document.querySelector(".windiv");
+    let losediv = document.querySelector(".losediv");
+    let highLowDiv = document.querySelector(".highLowDiv");
+
+    if(highLowDiv) highLowDiv.remove();
+    if(windiv){
+        windiv.remove()
+        turns.innerText = 0;
+    } 
+    if(losediv){
+        losediv.remove()
+    }
+    if(turns.innerText == 0) turns.innerText = 15;
+
     if(e.key == "Enter"){
         submitFun();
     }
+
 });
 
 
 
-function submitFun(e){
+function submitFun(){
     let value = parseInt(numberTab.value);
-    console.log(value);
-    console.log(num)
     if(numberTab.value == "") return;
 
     if(parseInt(value) == parseInt(num)){
@@ -123,7 +96,8 @@ function submitFun(e){
         windiv.classList.add("windiv");
         windiv.innerHTML = `<h1>YOU WIN</h1>`;
         main.append(windiv);
-        reset();
+        num = Math.floor(Math.random() * 1000) + 1;
+        turns.innerText = parseInt(turns.innerText) - 1;
     }
 
     else if(parseInt(turns.innerText) <= 1){
@@ -132,12 +106,11 @@ function submitFun(e){
         losediv.classList.add("losediv");
         losediv.innerHTML = `<h1>OOPS! YOU LOST</h1>`;
         main.append(losediv);
-        reset();
+        turns.innerText = 0;
+        num = Math.floor(Math.random() * 1000) + 1;
     }
 
     else{
-        // let highlowDiv = document.querySelector(".highLowDiv");
-        // if(highlowDiv) highlowDiv.remove();
         highlowDiv = document.createElement("div");
         highlowDiv.classList.add("highLowDiv");
         if(parseInt(value) < 1 || parseInt(value) > 1000){

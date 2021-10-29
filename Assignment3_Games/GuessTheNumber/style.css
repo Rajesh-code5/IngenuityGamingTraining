@@ -8,11 +8,18 @@
 body{
     background-color: #FFDAB9;
 }
+
 h1{
     /* margin: 1em; */
     font-size: 60px;
-    font-family:cursive
 }
+
+.guess{
+    /* margin: 1em; */
+    font-size: 60px;
+    color: rgb(120, 175, 238);
+}
+
 
 .input-field{
     height: 20rem;
@@ -47,16 +54,19 @@ h1{
     position: fixed;
     top: 40%;
     left: 40%;
+    color: rgb(148, 42, 99);
 }
 
 .losediv{
     position: fixed;
     top: 40%;
-    left: 40%;
+    left: 35%;
+    color: darkcyan;
 }
 
 .highLowDiv{
     position: fixed;
     top: 40%;
     left: 40%;
+    color: darkmagenta;
 }
