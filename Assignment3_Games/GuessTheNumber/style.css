@@ -22,19 +22,22 @@ h1{
 
 
 .input-field{
-    height: 20rem;
-    width: 50rem;
+    height: 70%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     background-color: blanchedalmond;
-    box-sizing: border-box;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    position: relative;
 }
 
 .inner-element{
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 50%;
     transform: translate(-50%,-50%);
 }
 
@@ -43,30 +46,15 @@ h1{
     background-color: #FDF5E6;
     height: 29rem;
     margin: 0 10%;
-    position: relative;
 }
 
 .inner-element #number-tab{
     margin-top: 25px;
 }
 
-.windiv{
-    position: fixed;
-    top: 40%;
-    left: 40%;
-    color: rgb(148, 42, 99);
-}
-
-.losediv{
-    position: fixed;
-    top: 40%;
+.windiv, .losediv, .highLowDiv{
+    color: rgb(194, 64, 41);
+    position: absolute;
+    top: 70%;
     left: 35%;
-    color: darkcyan;
-}
-
-.highLowDiv{
-    position: fixed;
-    top: 40%;
-    left: 40%;
-    color: darkmagenta;
 }

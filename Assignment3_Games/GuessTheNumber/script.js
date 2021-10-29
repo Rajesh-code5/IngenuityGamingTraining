@@ -30,7 +30,7 @@ submit.addEventListener("click",function(){
 const resetBtn = document.querySelector("button[type = 'Reset']");
 
 resetBtn.addEventListener("click",function(e){
-    turns.innerText = 15;
+    turns.innerText = 9;
     num = Math.floor(Math.random() * 1000) + 1;
 
     let windiv = document.querySelector(".windiv");
@@ -95,7 +95,7 @@ function submitFun(){
         let windiv = document.createElement("div");
         windiv.classList.add("windiv");
         windiv.innerHTML = `<h1>YOU WIN</h1>`;
-        main.append(windiv);
+        inputField.append(windiv);
         num = Math.floor(Math.random() * 1000) + 1;
         turns.innerText = parseInt(turns.innerText) - 1;
     }
@@ -105,7 +105,7 @@ function submitFun(){
         let losediv = document.createElement("div");
         losediv.classList.add("losediv");
         losediv.innerHTML = `<h1>OOPS! YOU LOST</h1>`;
-        main.append(losediv);
+        inputField.append(losediv);
         turns.innerText = 0;
         num = Math.floor(Math.random() * 1000) + 1;
     }
@@ -121,7 +121,7 @@ function submitFun(){
         }else{
             highlowDiv.innerHTML = `<h1>Too Low</h1>`; 
         }
-        main.append(highlowDiv);
+        inputField.append(highlowDiv);
         turns.innerText = parseInt(turns.innerText) - 1;
     }
 
