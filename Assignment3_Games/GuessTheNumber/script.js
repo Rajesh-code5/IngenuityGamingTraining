@@ -16,7 +16,7 @@ inputField.innerHTML = ` <div class="inner-element">
 
 const turns = document.querySelector("#turns");
 
-turns.innerText = 15;
+turns.innerText = 10;
 
 let num = Math.floor(Math.random() * 1000) + 1;
 
@@ -30,7 +30,7 @@ submit.addEventListener("click",function(){
 const resetBtn = document.querySelector("button[type = 'Reset']");
 
 resetBtn.addEventListener("click",function(e){
-    turns.innerText = 9;
+    turns.innerText = 10;
     num = Math.floor(Math.random() * 1000) + 1;
 
     let windiv = document.querySelector(".windiv");
@@ -60,7 +60,7 @@ numberTab.addEventListener("click",function(e){
     if(losediv){
         losediv.remove()
     }
-    if(turns.innerText == 0) turns.innerText = 15;
+    if(turns.innerText == 0) turns.innerText = 10;
 })
 
 numberTab.addEventListener("keypress",function(e){
@@ -77,7 +77,7 @@ numberTab.addEventListener("keypress",function(e){
     if(losediv){
         losediv.remove()
     }
-    if(turns.innerText == 0) turns.innerText = 15;
+    if(turns.innerText == 0) turns.innerText = 10;
 
     if(e.key == "Enter"){
         submitFun();
