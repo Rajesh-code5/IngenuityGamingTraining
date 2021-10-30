@@ -20,6 +20,8 @@ let autoplay = 0;
 let index_no = 0;
 let Playing_song = false;
 
+let backgroundstyle = -1;
+
 //create a audio Element
 let track = document.createElement('audio');
 
@@ -200,7 +202,6 @@ function range_slider(){
 const playlist = document.querySelector(".playlist");
 
 let num = All_song.length;
-console.log(num)
 index_no = 0;
 
 while(num-- > 0){
@@ -217,12 +218,16 @@ while(num-- > 0){
 
 let song = document.querySelectorAll(".song");
 let serialNo = document.querySelectorAll(".song .srno");
-
 for(let i = 0;i < song.length;i++){
-    song[i].addEventListener("click",function(){
-        
-        console.log(serialNo[i].innerText)
-        load_track(serialNo[i].innerText - 1);
+    song[i].addEventListener("click",function(e){
+        console.log(backgroundstyle)
+        song[i].style.background = "linear-gradient(315deg, #e23456 0%, #be761f 74%)";
+        if(backgroundstyle != -1){
+          song[backgroundstyle].style.removeProperty("background");
+        }
+        backgroundstyle = i;
+        index_no = serialNo[i].innerText - 1;
+        load_track(index_no);
         playsong();
     });
 }
