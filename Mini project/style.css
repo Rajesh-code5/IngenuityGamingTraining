@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.resetFrame {
+    width: 640px;
+    height: 40px;
+    text-align: center;
+  }
+
+button.resetBtn {
+    background-color: #cccccc;
+    color: black;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    align-self: center;
+}
