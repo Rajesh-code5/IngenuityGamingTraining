@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: turquoise;
 }
 
 body{
@@ -9,25 +8,40 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background-color: rgb(226, 225, 225);
 }
 
 .main{
     width: 900px;
     height: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: white;
+    border : 2px solid; 
 }
 
 .function{
-    width : 20%;
-    height: 100%;
-    background-color: rgb(85, 83, 83);
+    width : 100%;
+    height: 10%;
+    background-color: rgb(163, 162, 162);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
 }
 
 #canvas{
-    width: 80%;
-    height: 100%;
-    background-color: rgb(221, 87, 87);
+    width: 100%;
+    height: 90%;
 }
+
+.rectangle, .circle, .brush, .eraser, .hexagon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle, .circle, .brush,.eraser{
+    border-right: 2px solid grey;
+}
+
