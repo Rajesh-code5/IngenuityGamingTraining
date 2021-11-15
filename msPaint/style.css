@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(226, 225, 225);
+}
+
+.main{
+    width: 900px;
+    height: 550px;
+    background-color: white;
+    border : 2px solid; 
+}
+
+.function{
+    width : 100%;
+    height: 10%;
+    background-color: rgb(163, 162, 162);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+#canvas{
+    width: 100%;
+    height: 90%;
+}
+
+.rectangle, .circle, .brush, .eraser, .triangle, .diamond, .color{
+    width: 14.28%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle, .circle, .brush,.eraser, .triangle,.diamond{
+    border-right: 2px solid grey;
+}
