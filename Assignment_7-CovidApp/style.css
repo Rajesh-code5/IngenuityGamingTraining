@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Charcoal, sans-serif;
+    background-image: url("cafarella-covid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  
+  #myForm{
+    text-align: center;
+  
+  }
+  
+  #confirmed{
+    text-align: center;
+    
+  }
+  #recovered{
+    text-align: center;
+    
+  }
+  #death{
+    text-align: center;
+    
+  }
