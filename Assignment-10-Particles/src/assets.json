@@ -1,0 +1,73 @@
+[
+  {
+    "key": "A",
+    "url": "assets/A.png"
+  },
+  {
+    "key": "C",
+    "url": "assets/C.png"
+  },
+  {
+    "key": "D",
+    "url": "assets/D.png"
+  },
+  {
+    "key": "L",
+    "url": "assets/L.png"
+  },
+  {
+    "key": "P",
+    "url": "assets/P.png"
+  },
+  {
+    "key": "R",
+    "url": "assets/R.png"
+  },
+  {
+    "key": "Cars",
+    "url": "assets/Cars.png"
+  },
+  {
+    "key": "Character",
+    "url": "assets/character.jpg"
+  },
+  {
+    "key": "solar",
+    "url": "assets/solar.jpg"
+  },
+  {
+    "key": "gold-coins",
+    "url": "https://pixijs.io/particle-emitter/examples/images/gold_anim.json"
+  },
+  {
+    "key": "desyrel",
+    "url": "https://pixijs.io/examples/examples/assets/bitmap-font/desyrel.xml"
+  },
+  {
+    "key": "snow",
+    "url": "https://pixijs.io/particle-emitter/examples/images/Snow100.png"
+  },
+  {
+    "key": "bubble",
+    "url": "https://pixijs.io/particle-emitter/examples/images/Bubbles99.png"
+  },
+  {
+    "key": "pop",
+    "url": "https://pixijs.io/particle-emitter/examples/images/pop_anim.json"
+  },
+  {
+    "key": "orangeJuice",
+    "url": "assets/orange-juice-2.0-msdf.json"
+  },
+  {
+    "key": "notoSans",
+    "url": "assets/NotoSans-Bold.fnt"
+  },
+  {
+    "key": "notoSansBlack",
+    "url": "assets/NotoSans-Black.fnt"
+  },
+  { "key": "hero", "url": "assets/hero/hero.json" },
+  { "key": "goblins", "url": "assets/goblins/goblins.json" },
+  { "key": "spineboy", "url": "assets/spineboy/spineboy.json" }
+]
